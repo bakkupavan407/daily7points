@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+    <title>Welcome to your school name</title>
+    smart phone css
+    <link href="assets/phone.css" rel="stylesheet" type="text/css" media="all and (min-width: 0px) and (max-width: 480px)" />
+    Tablet
+    <link href="assets/tablet.css" rel="stylesheet" type="text/css" media="all and (min-width: 481px) and (max-width: 800px)" />
+    Desktop
+    <link href="assets/desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width:801px)"> -->
+    <title>D7P</title>
+    <link rel="shortcut icon" href="img/fav.png">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <style type="text/css">
+    body {
+        color: #7473AD;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .main_menu ul {
+        list-style-type: none;
+    }
+
+    .main_menu ul li a {
+        color: #7473AD;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+    }
+
+    .whatwedo_content {
+      font-size: large;
+    }
+    </style>
+</head>
+
+<body ng-app="D7P" ng-controller="myCtrl">
+    <!-- <base href="/index.html"> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-md-offset-2">
+                <a href="/">
+                  <img class="img-responsive" src="img/banner.png">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-10">
+                <div ui-view></div>
+            </div>
+            <div class="col-sm-12 col-md-2">
+                <div class="main_menu">
+                    <ul>
+                        <li><a href="#!/">Home</a></li>
+                        <li><a href="#!/whatwedo">What we do</a></li>
+                        <li><a href="#!/blog">Blog</a></li>
+                        <li><a href="#!/login">Sign Up/ Sign In</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="vendor/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/js/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/js/angular-ui-router.min.js"></script>
+</body>
+<!-- angular app file -->
+<script type="text/javascript" src="js/app.js"></script>
+<!-- app controllers -->
+<script type="text/javascript" src="js/controllers/dashboardController.js"></script>
+<script type="text/javascript" src="js/controllers/homeController.js"></script>
+<script type="text/javascript" src="js/controllers/whatwedoController.js"></script>
+<script type="text/javascript" src="js/controllers/blogController.js"></script>
+<script type="text/javascript" src="js/controllers/loginController.js"></script>
+<!-- app services -->
+<script type="text/javascript" src="js/services/dashboardService.js"></script>
+
+</html>
